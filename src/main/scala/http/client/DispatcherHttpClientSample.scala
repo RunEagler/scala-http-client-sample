@@ -16,27 +16,19 @@ class DispatcherHttpClientSample extends CommonHttpClientSample {
 
   def httpRequest(webMethod: String, uri: String, headers: Map[String, String], requestBody: String = ""): CustomResponse = {
 
-    val request = setRequest(webMethod,uri,headers,requestBody)
-    val futureResponse = Http.default.client.prepareRequest(request).execute()
-    return extractResponse(futureResponse.get())
-
-  }
-
-  def setRequest(webMethod: String, uri: String, headers: Map[String, String], requestBody: String): RequestBuilder = {
-
     var request = new RequestBuilder(webMethod)
       .setUrl(uri)
       .setReadTimeout(readTimeoutMillis)
       .setRequestTimeout(connectTimeoutMillis)
 
-    for(header <- headers){
-      request = request.setHeader(header._1,header._2)
+    for (header <- headers) {
+      request = request.setHeader(header._1, header._2)
     }
-    if(requestBody != ""){
+    if (requestBody != "") {
       request = request.setBody(requestBody)
     }
-
-    return request
+    val futureResponse = Http.default.client.prepareRequest(request).execute()
+    return extractResponse(futureResponse.get())
   }
 
   def extractResponse(res: Response): CustomResponse = {

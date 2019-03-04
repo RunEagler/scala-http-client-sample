@@ -23,7 +23,6 @@ class SttpHttpClientSample extends CommonHttpClientSample {
       .method(webMethod, uri"$url")
       .headers(headers)
       .readTimeout(DefaultReadTimeout)
-
     if (requestBody != "") {
       request = request.body(requestBody)
     }

@@ -14,14 +14,6 @@ class SkinnyHttpClientSample extends CommonHttpClientSample {
 
   def httpRequest(webMethod: Method, url: String, headers: Map[String, String], requestBody: String = ""): CustomResponse = {
 
-    val request = setRequest(url, headers, requestBody)
-    val response = HTTP.request(webMethod, request)
-
-    return extractResponse(response)
-  }
-
-  def setRequest(url: String, headers: Map[String, String], requestBody: String): Request = {
-
     val request = new Request(url)
     request.connectTimeoutMillis(this.readTimeoutMillis)
     request.readTimeoutMillis(this.connectTimeoutMillis)
@@ -33,7 +25,9 @@ class SkinnyHttpClientSample extends CommonHttpClientSample {
         request.header(k, v)
       }
     }
-    return request
+    val response = HTTP.request(webMethod, request)
+
+    return extractResponse(response)
   }
 
   def extractResponse(res: Response): CustomResponse = {

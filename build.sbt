@@ -36,6 +36,9 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.5" % "test",
   "junit" % "junit" % "4.12",
   "com.novocode" % "junit-interface" % "0.11" % "test",
-  "net.liftweb" %% "lift-json" % "3.3.0"
+  "net.liftweb" %% "lift-json" % "3.3.0",
+
+  //scalaj
+  "org.scalaj" %% "scalaj-http" % "2.4.1"
 
 )
