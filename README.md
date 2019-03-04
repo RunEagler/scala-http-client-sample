@@ -5,6 +5,7 @@
 - [Akka](https://github.com/akka/akka)
 - [Dispatch](https://github.com/dispatch/reboot)
 - [Apache](https://github.com/apache/httpcomponents-client)
+- [scalaj-http](https://github.com/scalaj/scalaj-http)
 
 ## note
 
