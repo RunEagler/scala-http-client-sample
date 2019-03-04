@@ -1,5 +1,4 @@
-package sample.httpclient.test
-
+package http.client
 
 case class User(user_id:Int = 0,name:String,age:Int,programming_skills:List[ProgrammingSkill])
 case class ProgrammingSkill(item:String)

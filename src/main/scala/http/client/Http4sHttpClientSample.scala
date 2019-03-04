@@ -1,6 +1,4 @@
-
-package sample.httpclient
-
+package http.client
 import cats.effect.IO
 import org.http4s.Status.Successful
 import org.http4s.client.Client

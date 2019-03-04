@@ -1,4 +1,4 @@
-package sample.httpclient
+package http.client
 
 
 trait WebMethod {

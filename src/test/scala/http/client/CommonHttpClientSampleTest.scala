@@ -1,11 +1,9 @@
-
-package sample.httpclient.test
+package http.client
 
 import net.liftweb.json
 import net.liftweb.json.{DefaultFormats, Extraction, compactRender}
 import org.apache.http.HttpHeaders
 import org.scalatest.junit.AssertionsForJUnit
-import sample.httpclient.CommonHttpClientSample
 
 
 object CommonHttpClientSampleTest extends AssertionsForJUnit{

@@ -1,12 +1,11 @@
-package sample.httpclient.test
+package http.client
 
 import org.junit.Test
 import org.scalatest.junit.AssertionsForJUnit
-import sample.httpclient.AkkaHttpClientSample
 
-class AkkaHttpClientSampleTest extends AssertionsForJUnit {
+class SttpHttpClientSampleTest extends AssertionsForJUnit {
 
-  val httpClient = new AkkaHttpClientSample()
+  val httpClient = new SttpHttpClientSample
 
   @Test
   def testGet() {

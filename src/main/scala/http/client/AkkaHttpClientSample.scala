@@ -1,4 +1,4 @@
-package sample.httpclient
+package http.client
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http

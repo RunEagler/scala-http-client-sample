@@ -1,13 +1,11 @@
-package sample.httpclient.test
-/* don't work
+package http.client
 
 import org.junit.Test
 import org.scalatest.junit.AssertionsForJUnit
-import sample.httpclient.Http4sHttpClientSample
 
-class Http4sHttpClientSampleTest extends AssertionsForJUnit {
+class AkkaHttpClientSampleTest extends AssertionsForJUnit {
 
-  val httpClient = new Http4sHttpClientSample
+  val httpClient = new AkkaHttpClientSample()
 
   @Test
   def testGet() {
@@ -29,4 +27,3 @@ class Http4sHttpClientSampleTest extends AssertionsForJUnit {
     CommonHttpClientSampleTest.testDelete(httpClient)
   }
 }
-*/

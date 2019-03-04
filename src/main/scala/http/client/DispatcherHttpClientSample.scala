@@ -1,4 +1,4 @@
-package sample.httpclient
+package http.client
 
 import dispatch._
 import org.asynchttpclient.util.HttpConstants.Methods

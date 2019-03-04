@@ -1,8 +1,7 @@
-package sample.httpclient.test
+package http.client
 
 import org.junit.Test
 import org.scalatest.junit.AssertionsForJUnit
-import sample.httpclient.DispatcherHttpClientSample
 
 class DispatcherHttpClientSampleTest extends AssertionsForJUnit {
 

@@ -1,4 +1,4 @@
-package sample.httpclient
+package http.client
 
 import skinny.http._
 

@@ -1,4 +1,4 @@
-package sample.httpclient
+package http.client
 
 import org.apache.http.HttpStatus
 import org.apache.http.client.config.RequestConfig

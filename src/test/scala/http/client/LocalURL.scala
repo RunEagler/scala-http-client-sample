@@ -1,4 +1,4 @@
-package sample.httpclient.test
+package http.client
 
 object LocalURL extends App{
 
